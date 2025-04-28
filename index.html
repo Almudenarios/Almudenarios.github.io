@@ -91,27 +91,42 @@
             </section>
             <section id="skills">
                 <h4 id="skills-title">Habilidades</h4>
-                <table id="web-skills">
-                    <tbody><tr>
-                        <td>
-                            <img src="images/mailIcon.png" alt="mail" style="width:100px;height:100px;"> 
-                        </td>
-                        <td>
-                            <img src="images/gitHubIcon.png" alt="mail" style="width:100px;height:100px;"> </a>
-                        </td>
-                        <td>
-                            <img src="images/gitHubIcon.png" alt="mail" style="width:100px;height:100px;"> </a>
-                        </td>
-                    </tr></tbody>
-                </table>
+                <p style="font-size: 20; margin-top: -30px;"><b>JavaScript</b></p>
+                <ul id="JS">
+                    <li>Uso de JavaScript sobre html y css</li>
+                    <li>Uso de librerías como Phaser 3</li>
+                </ul>
+                <p style="font-size: 20;"><b>Web</b></p>
+                <ul id="Web">
+                    <li>Conocimientos de html, css y markdown</li>
+                    <li>Diseño de Interfaces y UX</li>
+                </ul>
+                <p id="prog" style="font-size: 20;"><b>Programación</b></p>
+                <ul id="program">
+                    <li>Programación Orientada a Objetos</li>
+                    <li>Programación Funcional</li>
+                    <li>Control de versiones - experiencia con GitHub</li>
+                    <li>Debbugging y QA</li>
+                    <li>UML</li>
+                    <li>Patrones de Diseño</li>
+                    <li>Programación concurrente</li>
+                </ul>
+                <p><b>General</b></p>
+                <ul id="gen">
+                    <li>Metodología ágil: SCRUM</li>
+                    <li>Documentación</li>
+                </ul>
                 
             </section>
             <section id="experience">
                 <h4 id="experience-title">Experiencia</h4>
                 <p class="place-of-study" id="internship">REDI Ingenieros</p>
                 <p class="years-of-study" id="yearsinternship">marzo 2024 - mayo 2024</p>
-                <p class="additional-insight" ><ul id="notable-stuff-internship"><li>Diseño Web y Front-End (Wordpress)</li><li>Creación de Curso de Blender e implementación en Aula Virtual (html)</li></ul></p>
-                
+                <p class="additional-insight" ><ul id="notable-stuff-internship"><li>Diseño Web y Front-End (Wordpress)</li><li>Creación de Curso de Blender y publicación en Aula Virtual (html)</li></ul></p>
+                <br>
+                <a href="https://lsbehindoficial.itch.io/leave-something-behind"><p class="place-of-study" id="project1">Leave Something Behind</p></a>
+                <p class="years-of-study" id="yearproject1">noviembre 2022 - marzo 2023</p>
+                <p class="additional-insight" ><ul id="notable-stuff-project1"><li>Interfaz in-game</li><li>Assets de arte</li><li>Diseño de Juego: items</li></ul></p>
             </section>
         </div>
         
@@ -153,7 +168,21 @@
                     document.getElementById("3D").textContent="Course on 3D Modeling and Animation using Blender - ICAI Technological Campus";
 
                     document.getElementById("skills-title").textContent="Skills";
+
+                    document.getElementById("JS").innerHTML="<li>Use of JavaScript to modify html and css</li><li>Use of libraries such as Phaser 3</li>";
+                    document.getElementById("Web").innerHTML="<li>Use of html, css y markdown</li><li>UI and UX design</li>";
+                    document.getElementById("prog").textContent="Programming"
+                    document.getElementById("program").innerHTML="<li>Object Oriented Programming</li><li>Funtional Programming</li><li>Version control - experience using GitHUb</li><li>Debbugging and QA</li><li>UML</li><li>Software design patterns</li><li>Concurrent Programming</li>";
+                    document.getElementById("gen").innerHTML="<li>Agile Methodology: SCRUM</li><li>Documentation</li>";
+
                     document.getElementById("experience-title").textContent="Experience";
+                    
+                    document.getElementById("yearsinternship").textContent="march 2024 - may 2024";
+                    document.getElementById("notable-stuff-internship").innerHTML="<li>Web Design and Front-End (Wordpress)</li><li>Devising a Blender course and publishing it on their Virtual Classroom (html)</li>";
+
+                    document.getElementById("yearproject1").textContent="november 2022 - march 2023";
+                    document.getElementById("notable-stuff-project1").innerHTML="<li>In-game UI</li><li>Art assets</li><li>Game Design: items</li>";
+
 
                 }else{
                     language = 0
@@ -176,8 +205,20 @@
                     document.getElementById("3D").textContent="Curso de Modelado y Animación 3D en Blender - Campus Tecnológico de ICAI";
 
                     document.getElementById("skills-title").textContent="Habilidades";
-                    document.getElementById("experience-title").textContent="Experiencia";
 
+                    document.getElementById("JS").innerHTML="<li>Uso de JavaScript sobre html y css</li><li>Uso de librerías como Phaser 3</li>";
+                    document.getElementById("Web").innerHTML="<li>Conocimientos de html, css y markdown</li><li>Diseño de Interfaces y UX</li>";
+                    document.getElementById("prog").textContent="Programación";
+                    document.getElementById("program").innerHTML="<li>Programación Orientada a Objetos</li><li>Programación Funcional</li><li>Control de versiones - experiencia con GitHub</li><li>Debbugging y QA</li><li>UML</li><li>Patrones de Diseño</li><li>Programación concurrente</li>";
+                    document.getElementById("gen").innerHTML="<li>Metodología ágil: SCRUM</li><li>Documentación</li>";
+
+                    document.getElementById("experience-title").textContent="Experiencia";
+                    
+                    document.getElementById("yearsinternship").textContent="marzo 2024 - mayo 2024";
+                    document.getElementById("notable-stuff-internship").innerHTML="<li>Diseño Web y Front-End (Wordpress)</li><li>Creación de Curso de Blender y publicación en Aula Virtual (html)</li>";
+
+                    document.getElementById("yearproject1").textContent="noviembre 2022 - marzo 2023";
+                    document.getElementById("notable-stuff-project1").innerHTML="<li>Interfaz in-game</li><li>Assets de arte</li><li>Diseño de Juego: items</li>";
                 }
             }
 
