@@ -11,43 +11,90 @@
         </div>
         <div class="side", id="side">
             <!--image: avatar-->
-
+                <img src="images/portrait.png" alt="language" style="width:200px;height:200px;padding-left: 5%;padding-bottom: 20px;">
             <!--jump link About Me-->
-                <a href="#about-me">Sobre mí</a>
+                <a class="jumpLink" id="about" href="#about-me">Sobre mí</a>
             <!--jump link Education-->
-                <a href="#education">Educación</a>
+                <a class="jumpLink" id="ed" href="#education">Educación</a>
             <!--jump link Skills-->
-                <a href="#skills">Habilidades</a>
+                <a class="jumpLink" id="skill" href="#skills">Habilidades</a>
             <!--jump link Experience-->
-                <a href="#experience">Experiencia</a>
+                <a class="jumpLink" id="exp" href="#experience">Experiencia</a>
             <!--contact table-->
 
-            <!--close-->
+            <!--if I wanted to make it collapsable
             <button class="button", onclick="closeSidebar()">X
             </button>
+            -->
         </div>
-        <div class="options">
+        <div class="language", id = "language">
             <!--language Selection-->
+            <button class="button", id = "language-button", onclick="changeLanguage()">
+                <img id="language-marker" src="images/languageENG.png" alt="language" style="width:45px;height:30px;padding: 0px,0px,0px,0px;"> 
+            </button>
+
         </div>
         <div class="main", id="main">
             <section id="about-me">
-                <h1 id="my-name">Almudena Sánchez Encinas</h1>
-                <h2 id="desired-position">Front End Developer</h2>
-                <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+                <div id="name-and-pos">
+                    <h2 id="my-name">Almudena <br> <div id= "my-last-name">Sánchez Encinas</div></h2>
+                    <h3 id="desired-position">Front End Developer</h3> 
+                </div>
+                <div id="contact">
+                    <table id="socials">
+                        <tbody><tr>
+                            <td>
+                                <img src="images/mailIcon.png" alt="mail" style="width:30px;height:30px;"> 
+                            </td>
+                            <td>
+                                <a id= "social-link" href="mailto:almudena.sanchezencinas@outlook.es">    almudena.sanchezencinas@outlook.es</a> </a>
+                            </td></tr>
+
+                            <tr><td>
+                                <img src="images/gitHubIcon.png" alt="mail" style="width:30px;height:30px;"> </a>
+                            </td>
+                            <td>
+                                <a id= "social-link" href="https://github.com/Almudenarios">    Almudenarios</a> 
+                            </td></tr>
+
+                            <tr><td>
+                                <img src="images/telIcon.png" alt="mail" style="width:30px;height:30px;"> </a>
+                            </td>
+                            <td>
+                                <div id="social-link">    661477415</div>
+                            </td>
+                        </tr></tbody>
+                    </table>
+                    <p></p>
+                </div>
+                <div>
+                    <p id="introduction"> Hola, soy Almudena, estudiante de último año en el <b>Grado de Diseño y Desarrollo de Videojuegos</b>. 
+                    Me interesan los medios interactivos y aprender nuevas tecnologías. <br>
+                    <br>
+                    Soy una persona <b>proactiva</b> y que <b>trabaja bien en grupo</b>, por ejemplo, he organizado Game Jams con mis <a id= "text-link" href="https://www.instagram.com/gamescholarsurjc/">compañerxs de grado</a> y he <a id= "text-link" href="https://almu-sanenc.itch.io/">participado en otras</a> con amigxs o en solitario, y como también me interesa el dibujo en ocasiones participo en fanZines.
+                    <br><br>
+                </p>
+                </div>
             </section>
             <section id="education">
-                <p>Donde he estudiado</p>
-                <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+                <h4 id="education-title">Educación</h4>
+                <p class="place-of-study" id="URJC">Grado en Diseño y Desarrollo de Videojuegos - Universidad Rey Juan Carlos</p>
+                <p class="years-of-study" id="yearsURJC">2020 - en curso (TFG)</p>
+                <p class="additional-insight" id="abilities-degree"></p>
+                <p><br></p>
+                <p class="place-of-study" id="C2">English Proficiency (C2 - 225) - Cambridge Assessment</p>
+                <p class="years-of-study" id="yearC2">2021</p>
             </section>
             <section id="skills">
-                <p>Them Skillz</p>
-                <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+                <h4 id="skills-title">Habilidades</h4>
+                
             </section>
             <section id="experience">
-                <p>Acompañame en esta triste historia</p>
-                <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+                <h4 id="experience-title">Experiencia</h4>
+                
             </section>
         </div>
+        
         <script>
             function diplaySidebar(){
                 document.getElementById("main").style.marginLeft = "20%";
@@ -55,12 +102,59 @@
                 document.getElementById("side").style.display = "block";
                 document.getElementById("collapsed-side").style.display = "none";
             }
-        function closeSidebar(){
+            function closeSidebar(){
                 document.getElementById("main").style.marginLeft = "5%";
                 document.getElementById("side").style.display = "none";
                 document.getElementById("collapsed-side").style.width = "5%";
                 document.getElementById("collapsed-side").style.display = "block";
             }
+
+            var language = 0;
+
+            function changeLanguage(){
+                if(language == 0){
+                    language = 1
+
+                    document.getElementById("language-marker").src="images/languageESP.png";
+
+                    document.getElementById("about").textContent="About Me";
+                    document.getElementById("ed").textContent="Education";
+                    document.getElementById("skill").textContent="Skills";
+                    document.getElementById("exp").textContent="Experience";
+
+                    document.getElementById("introduction").innerHTML ="Hi, I'm Almudena, senior student at <b>King Juan Carlos University's Degree for Videogame Design and Development</b>. I am interested in interactive media and developing new technological skills. <br><br>I consider myself <b>proactive</b> and well-suited to <b>working as part of a team</b>, for instance, <a id= 'text-link' href='https://www.instagram.com/gamescholarsurjc/'>a group of my university classmates and I </a> took it upon ourselves to organize Game Jams in our own campus. I have also participated in <a id= 'text-link' href='https://almu-sanenc.itch.io/'>jams or other short projects</a> both with friends and by myself, and, since I am also interested in illustration, I have participated in some fanZines.<br>";
+
+                    document.getElementById("education-title").textContent="Education";
+
+                    document.getElementById("URJC").textContent="Degree in Videogame Design and Development - King Juan Carlos Univerity";
+                    document.getElementById("yearsURJC").textContent="2020 - ongoing (Final Project)";
+
+                    document.getElementById("skills-title").textContent="Skills";
+                    document.getElementById("experience-title").textContent="Experience";
+
+                }else{
+                    language = 0
+
+                    document.getElementById("language-marker").src="images/languageENG.png";
+
+                    document.getElementById("about").textContent="Sobre Mí";
+                    document.getElementById("ed").textContent="Educación";
+                    document.getElementById("skill").textContent="Habilidades";
+                    document.getElementById("exp").textContent="Experiencia";
+
+                    document.getElementById("introduction").innerHTML ="Hola, soy Almudena, estudiante de último año en el <b>Grado de Diseño y Desarrollo de Videojuegos</b>. Me interesan los medios interactivos y aprender nuevas tecnologías. <br><br>Soy una persona <b>proactiva</b> y que <b>trabaja bien en grupo</b>, por ejemplo, he organizado Game Jams con mis <a id= 'text-link' href='https://www.instagram.com/gamescholarsurjc/'>compañerxs de grado</a> y he <a id= 'text-link' href='https://almu-sanenc.itch.io/'>participado en otras</a> con amigxs o en solitario, y como también me interesa el dibujo en ocasiones participo en fanZines.<br><br>";
+
+                    document.getElementById("education-title").textContent="Educación";
+
+                    document.getElementById("URJC").textContent="Grado en Diseño y Desarrollo de Videojuegos - Universidad Rey Juan Carlos";
+                    document.getElementById("yearsURJC").textContent="2020 - en curso (TFG)";
+
+                    document.getElementById("skills-title").textContent="Habilidades";
+                    document.getElementById("experience-title").textContent="Experiencia";
+
+                }
+            }
+
         </script>
     </body>
 </html>
