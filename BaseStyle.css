@@ -57,6 +57,15 @@ p{
     padding-right: 100px;
 }
 
+li{
+    font-family: monospace;
+    font-size: 14px;
+    color: #252525;
+    line-height: 25px;
+    text-align: justify;
+    padding-right: 100px;
+}
+
 #text-link{
     font-family: monospace;
     font-size: 14px;

@@ -23,7 +23,7 @@
             <!--contact table-->
 
             <!--if I wanted to make it collapsable
-            <button class="button", onclick="closeSidebar()">X
+            <button class="button", onclick="closeSidebar()">
             </button>
             -->
         </div>
@@ -72,7 +72,10 @@
                     Me interesan los medios interactivos y aprender nuevas tecnologías. <br>
                     <br>
                     Soy una persona <b>proactiva</b> y que <b>trabaja bien en grupo</b>, por ejemplo, he organizado Game Jams con mis <a id= "text-link" href="https://www.instagram.com/gamescholarsurjc/">compañerxs de grado</a> y he <a id= "text-link" href="https://almu-sanenc.itch.io/">participado en otras</a> con amigxs o en solitario, y como también me interesa el dibujo en ocasiones participo en fanZines.
-                    <br><br>
+                    <br>
+                    <br>
+                    Otros de mis intereses son los juegos de mesa, la esgrima y los podcasts narrativos. 
+                    <br>
                 </p>
                 </div>
             </section>
@@ -80,17 +83,34 @@
                 <h4 id="education-title">Educación</h4>
                 <p class="place-of-study" id="URJC">Grado en Diseño y Desarrollo de Videojuegos - Universidad Rey Juan Carlos</p>
                 <p class="years-of-study" id="yearsURJC">2020 - en curso (TFG)</p>
-                <p class="additional-insight" id="abilities-degree"></p>
-                <p><br></p>
-                <p class="place-of-study" id="C2">English Proficiency (C2 - 225) - Cambridge Assessment</p>
+                <p class="additional-insight" ><ul id="notable-stuff-degree"><li>Matrícula de Honor en Diseño de Personajes</li><li>Ganadora del Jurado de Gamecept (Asociación de Estudiantes Virtual Soul)</li></ul></p>
+                <p class="place-of-study" id="C2">English Proficiency (Grade A) - Cambridge Assessment</p>
                 <p class="years-of-study" id="yearC2">2021</p>
+                <p class="place-of-study" id="3D">Curso de Modelado y Animación 3D en Blender - Campus Tecnológico de ICAI</p>
+                <p class="years-of-study" id="year-3D">2019</p>
             </section>
             <section id="skills">
                 <h4 id="skills-title">Habilidades</h4>
+                <table id="web-skills">
+                    <tbody><tr>
+                        <td>
+                            <img src="images/mailIcon.png" alt="mail" style="width:100px;height:100px;"> 
+                        </td>
+                        <td>
+                            <img src="images/gitHubIcon.png" alt="mail" style="width:100px;height:100px;"> </a>
+                        </td>
+                        <td>
+                            <img src="images/gitHubIcon.png" alt="mail" style="width:100px;height:100px;"> </a>
+                        </td>
+                    </tr></tbody>
+                </table>
                 
             </section>
             <section id="experience">
                 <h4 id="experience-title">Experiencia</h4>
+                <p class="place-of-study" id="internship">REDI Ingenieros</p>
+                <p class="years-of-study" id="yearsinternship">marzo 2024 - mayo 2024</p>
+                <p class="additional-insight" ><ul id="notable-stuff-internship"><li>Diseño Web y Front-End (Wordpress)</li><li>Creación de Curso de Blender e implementación en Aula Virtual (html)</li></ul></p>
                 
             </section>
         </div>
@@ -122,12 +142,15 @@
                     document.getElementById("skill").textContent="Skills";
                     document.getElementById("exp").textContent="Experience";
 
-                    document.getElementById("introduction").innerHTML ="Hi, I'm Almudena, senior student at <b>King Juan Carlos University's Degree for Videogame Design and Development</b>. I am interested in interactive media and developing new technological skills. <br><br>I consider myself <b>proactive</b> and well-suited to <b>working as part of a team</b>, for instance, <a id= 'text-link' href='https://www.instagram.com/gamescholarsurjc/'>a group of my university classmates and I </a> took it upon ourselves to organize Game Jams in our own campus. I have also participated in <a id= 'text-link' href='https://almu-sanenc.itch.io/'>jams or other short projects</a> both with friends and by myself, and, since I am also interested in illustration, I have participated in some fanZines.<br>";
+                    document.getElementById("introduction").innerHTML ="Hi, I'm Almudena, senior student at <b>King Juan Carlos University's Degree for Videogame Design and Development</b>. I am interested in interactive media and developing new technological skills. <br><br>I consider myself <b>proactive</b> and well-suited to <b>working as part of a team</b>, for instance, <a id= 'text-link' href='https://www.instagram.com/gamescholarsurjc/'>a group of my university classmates and I </a> took it upon ourselves to organize Game Jams in our own campus. I have also participated in <a id= 'text-link' href='https://almu-sanenc.itch.io/'>jams or other short projects</a> both with friends and by myself, and, since I am also interested in illustration, I have participated in some fanZines.<br><br>Other of my interests are tabletop games, fencing and narrative podcasts.";
 
                     document.getElementById("education-title").textContent="Education";
 
                     document.getElementById("URJC").textContent="Degree in Videogame Design and Development - King Juan Carlos Univerity";
                     document.getElementById("yearsURJC").textContent="2020 - ongoing (Final Project)";
+                    document.getElementById("notable-stuff-degree").innerHTML="<li>Honours in Character and Environment Design</li><li>Jury winner of Gamecept contest (Virtual Soul Student Association)</li>";
+
+                    document.getElementById("3D").textContent="Course on 3D Modeling and Animation using Blender - ICAI Technological Campus";
 
                     document.getElementById("skills-title").textContent="Skills";
                     document.getElementById("experience-title").textContent="Experience";
@@ -142,12 +165,15 @@
                     document.getElementById("skill").textContent="Habilidades";
                     document.getElementById("exp").textContent="Experiencia";
 
-                    document.getElementById("introduction").innerHTML ="Hola, soy Almudena, estudiante de último año en el <b>Grado de Diseño y Desarrollo de Videojuegos</b>. Me interesan los medios interactivos y aprender nuevas tecnologías. <br><br>Soy una persona <b>proactiva</b> y que <b>trabaja bien en grupo</b>, por ejemplo, he organizado Game Jams con mis <a id= 'text-link' href='https://www.instagram.com/gamescholarsurjc/'>compañerxs de grado</a> y he <a id= 'text-link' href='https://almu-sanenc.itch.io/'>participado en otras</a> con amigxs o en solitario, y como también me interesa el dibujo en ocasiones participo en fanZines.<br><br>";
+                    document.getElementById("introduction").innerHTML ="Hola, soy Almudena, estudiante de último año en el <b>Grado de Diseño y Desarrollo de Videojuegos</b>. Me interesan los medios interactivos y aprender nuevas tecnologías. <br><br>Soy una persona <b>proactiva</b> y que <b>trabaja bien en grupo</b>, por ejemplo, he organizado Game Jams con mis <a id= 'text-link' href='https://www.instagram.com/gamescholarsurjc/'>compañerxs de grado</a> y he <a id= 'text-link' href='https://almu-sanenc.itch.io/'>participado en otras</a> con amigxs o en solitario, y como también me interesa el dibujo en ocasiones participo en fanZines.<br><br>Otros de mis intereses son los juegos de mesa, la esgrima y los podcasts narrativos.<br>";
 
                     document.getElementById("education-title").textContent="Educación";
 
                     document.getElementById("URJC").textContent="Grado en Diseño y Desarrollo de Videojuegos - Universidad Rey Juan Carlos";
                     document.getElementById("yearsURJC").textContent="2020 - en curso (TFG)";
+                    document.getElementById("notable-stuff-degree").innerHTML="<li>Matrícula de Honor en Diseño de Personajes y Escenarios</li><li>Ganadora del Jurado de Gamecept (Asociación de Estudiantes Virtual Soul)</li>";
+
+                    document.getElementById("3D").textContent="Curso de Modelado y Animación 3D en Blender - Campus Tecnológico de ICAI";
 
                     document.getElementById("skills-title").textContent="Habilidades";
                     document.getElementById("experience-title").textContent="Experiencia";
